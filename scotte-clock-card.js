@@ -67,7 +67,7 @@ class ClockCard extends Polymer.Element {
   _updateTime() {
     var time = new Date();
 
-    this.time.innerHTML = time.toLocaleTimeString('en-US', {hour12: true, hour: 'numeric', minute: 'numeric'});
+    this.time.innerHTML = time.toLocaleTimeString('en-US', {hour12: false, hour: 'numeric', minute: 'numeric'});
     this.date.innerHTML = time.toLocaleDateString('en-US', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'});
   }
 
