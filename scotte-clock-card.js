@@ -68,7 +68,7 @@ class ClockCard extends Polymer.Element {
     var time = new Date();
 
     this.time.innerHTML = time.toLocaleTimeString('en-US', {hour12: false, hour: 'numeric', minute: 'numeric'});
-    this.date.innerHTML = time.toLocaleDateString('en-US', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'});
+    this.date.innerHTML = time.toLocaleDateString('pl-PL', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'});
   }
 
   // The height of your card. Home Assistant uses this to automatically
